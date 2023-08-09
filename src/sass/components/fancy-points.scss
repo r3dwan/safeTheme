@@ -1,0 +1,80 @@
+.fancy-points{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    .container{
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+
+        padding: 0 !important;
+
+        @media (max-width: 768px){
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+
+    .container{
+        display: flex;
+
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+
+        >div{
+            width: 50%;
+
+            @media (max-width: 768px){
+                width: 100%;
+            }
+
+            .title{
+                font-size: 24px;
+                line-height: 25px;
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+        }
+
+        .item{
+            display: flex;
+            font-size: 16px;
+            line-height: 170%;
+            gap: 26px;
+
+            img{
+                width: 30px;
+                min-width: 30px;
+            }
+
+            margin-bottom: 18px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        .left_col,
+        .right_col{
+            padding: 29px 24px;
+        }
+
+        .right_col{
+            background: #ffffff;
+            color: $textcolor;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+
+            @media (max-width: 768px){
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 20px;
+            }
+
+
+            font-size: 16px;
+            line-height: 170%;
+        }
+
+        color: #ffffff;
+    }
+}

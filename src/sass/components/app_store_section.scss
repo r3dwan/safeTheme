@@ -1,0 +1,47 @@
+.app_store_section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @media (max-width: 600px){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .container{
+        max-width: 580px !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        h2{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 33px;
+            color: #FFFFFF;
+            margin-bottom: 24px;
+
+            @media (max-width: 600px){
+                font-size: 24px;
+            }
+        }
+
+        .desc{
+            font-size: 16px;
+            line-height: 170%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .app_buttons{
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+
+            img{
+                width: 147px;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.fancy_accordion{
+    @extend .call_to_action;
+    background: radial-gradient(55.23% 55.23% at 50% 132.98%, #A8CA57 0%, #0A2515 100%) !important;
+
+    padding: 160px 0 !important;
+    padding-bottom: 140px !important;
+
+    .container{
+        align-items: flex-start;
+    }
+
+    h2,
+    .desc{
+        max-width: 640px;
+    }
+
+    .desc{
+        margin-top: 32px;
+    }
+
+    .right_col{
+        display: block !important;
+        max-width: 640px;
+    }
+    
+    .accordion{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        font-feature-settings: 'liga' off;
+        color: rgba(255, 255, 255, 0.4);
+
+        border-bottom: 1px solid  rgba(255, 255, 255, 0.4) !important;
+
+
+        &:after{
+            display: none !important;
+        }
+
+
+        &+.panel{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: -0.01em;
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 20px;
+
+            border: none;
+
+            p{
+                padding-bottom: 0px;
+                padding-top: 20px;
+            }
+        }
+
+        &.active{
+            color: #FFFFFF;
+            border-bottom: 1px solid  #ffffff !important;
+
+            &+.panel{
+             color: #FFFFFF;
+            }
+        }
+    }
+}

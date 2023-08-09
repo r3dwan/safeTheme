@@ -1,0 +1,23 @@
+.page-title{
+    margin-top: 82px;
+    margin-bottom: 82px;
+
+    h1{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+
+        @media (max-width: 1230px){
+            font-size: 32px;
+            line-height: 120%;
+        }
+    
+        @media (max-width: 600px){
+            text-align: left;
+            font-size: 28px;
+        }
+    }
+}
+

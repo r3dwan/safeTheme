@@ -1,0 +1,293 @@
+.custom_cliento_widget{
+    margin-top: 82px;
+
+    @media (max-width: 600px){
+        margin-top: 30px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        color: #ffffff;
+    }
+
+    h2{
+        font-size: 50px;
+        line-height: 120%;
+
+        @media (max-width: 768px){
+            font-size: 26px;
+        }
+    }
+
+    #cliento-booking{
+
+        .cb-nav{
+            display: flex;
+            gap: 12px;
+        }
+
+        .cb-nav-item{
+            font-weight: 400;
+            font-size: 16px;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            background: transparent;
+
+            padding-top: 3px;
+
+            &:last-child{
+                padding-top: 0;
+            }
+    
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+
+            &.active{
+                background: #FFFFFF !important;
+                color: #100D23 !important;
+                font-weight: 700;
+            }
+    
+        }
+
+
+        h3{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 170%;
+            margin-bottom: 22px;
+        }
+
+        .cb-service-item{
+            padding: 0;
+            background: none;
+
+            color: #FFFFFF;
+
+            margin-bottom: 33px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            strong,
+            a{
+                display: block;
+            }
+
+            a + p{
+                color: #ffffff;
+            }
+
+            *{
+                font-size: 16px;
+                line-height: 170%;
+            }
+        }
+
+        .cb-service-item .cb-checkbox{
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            min-height: 20px;
+            top: 0;
+
+            border: 1px solid #FFFFFF;
+            border-radius: 4px;
+        }
+    }
+
+
+    #cliento-booking .cb-service-button-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    #cliento-booking .cb-button{
+        svg{
+            display: none;
+        }
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+        border-radius: 12px;
+        max-width: 312px;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $secondary;
+        padding-top: 3px;
+
+        transition: 500ms all ease;
+        background: $secondary !important;
+        
+        color: #FFFFFF;
+
+        padding: 0;
+        padding-top: 3px;
+
+        &:hover{
+            background: #b5731c !important;
+        }
+    }
+
+    #cliento-booking{
+        .cb-calendar-nav{
+            display: flex;
+            gap: 12px;
+
+            svg{
+                path{
+                    stroke: #100D23;
+                }
+            }
+        }
+
+        p{
+            line-height: 150%;
+            font-weight: 400;
+        }
+    }
+
+    .cb-form section{
+        background: transparent;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 0;
+        color: #ffffff;
+
+        input[type="text"],
+        textarea{
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 12px;
+        }
+
+
+        input,
+        textarea{
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            border-radius: 12px;
+            padding: 10px 12px;
+
+            color: #100D23;
+            font-size: 16px;
+        }
+
+        a{
+            color: $secondary;
+        }
+    }
+
+    .cb-checkbox-container.cb-accept{
+        label{
+            display: inline-block;
+        }
+    }
+
+    .cb-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    a{
+        color: $secondary;
+    }
+    
+}
+
+
+.custom_contact_form{
+    max-width: 712px;
+    margin-left: auto;
+    margin-right: auto;
+
+    input,
+    textarea{
+        display: block;
+        color: #ffffff;
+        width: 100%;
+
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 12px;
+        padding: 10px 12px;
+
+        color: #100D23;
+        font-size: 16px;
+    }
+
+    label{
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 170%;
+        color: #FFFFFF;
+
+        @media (max-width: 600px){
+            font-size: 18px;
+        }
+
+        .asterisk{
+            color: #FF0000;
+        }
+    }
+
+    .wpcf7-form-control-wrap{
+        display: block;
+        margin-bottom: 30px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .wpcf7-not-valid-tip{
+        margin-top: 15px;
+    }
+
+    .submit_btn{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+        color: #FFFFFF !important;
+
+        @media (max-width: 600px){
+            margin-top: 30px;
+        }
+    }
+
+
+    .wpcf7-response-output{
+        color: #ffffff;
+        padding: 20px 20px !important;
+        justify-content: center;
+        display: flex;
+    }
+}

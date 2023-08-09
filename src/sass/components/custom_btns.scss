@@ -1,0 +1,36 @@
+.custom_buttons{
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+
+        img{
+            width: auto;
+            height: 40px;
+        }
+    }
+
+    &.with_dropdown{
+        .container{
+            display: flex;
+            align-items: flex-start;
+            gap: 10px 20px;
+    
+            >div{
+                @media (max-width: 600px){
+                    width: 100%;
+                }
+            }
+
+            .dropdown_items{
+                padding: 0 11px;
+    
+                &.active{
+                    padding: 14px 11px;
+                }
+            }
+        }
+    }
+}
