@@ -94,37 +94,6 @@ function check_title($str, $word){
 }
 
 
-// SMS FUNCTIONALITY
-function custom_javascript_for_sms() {
-    ?>
-        <script>
-          document.addEventListener( 'wpcf7submit', function( event ) {
-				if ( '727' == event.detail.contactFormId || '668' == event.detail.contactFormId) {
-					var number = event.detail.inputs[0].value;
-					var api_key =  '<?= get_option('api_key');?>';
-					const options = {
-					  method: 'POST',
-					  headers: {
-						'Content-Type': 'application/json',
-						'X-API-KEY': api_key
-					  },
-					  body: JSON.stringify({"phone_number": number})
-					};
-
-					fetch('https://stage.api.portal.safetrafikskola.se/v1/core/sms/', options)
-					  .then(response => response.json())
-					  .then(response => console.log(response))
-					  .catch(err => console.error(err));
-					}
-			}, false );
-        </script>
-    <?php
-}
-add_action('wp_head', 'custom_javascript_for_sms');
-
-
-
-
 // Adding an option to enter api key under tools
 // Creates a subpage under the Tools section
 add_action('admin_menu', 'wpdocs_register_my_api_keys_page');
@@ -170,8 +139,10 @@ add_action( 'admin_post_process_form', 'submit_api_key' );
 
 
 
+function send_api_request($phone_number) {
+    
 
-
-
+    return false;
+}
 
 ?>
