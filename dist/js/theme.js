@@ -112,6 +112,33 @@ function generatePassword() {
 if (document.querySelector('#account_password')) {
   document.querySelector('#account_password').value = generatePassword();
 }
+(function ($) {
+  document.addEventListener('wpcf7submit', function (event) {
+    if ('727' == event.detail.contactFormId || '668' == event.detail.contactFormId) {
+      $('button[type="submit"]').html('Submitting...');
+      var number = event.detail.inputs[0].value;
+      var formData = {
+        action: 'handle_api',
+        // AJAX action name
+        number: number // Get the phone number from the form
+      };
+
+      $.ajax({
+        type: 'POST',
+        url: myAjax.ajaxurl,
+        data: formData,
+        success: function (response) {
+          console.log(response);
+          $('button[type="submit"]').html('Bli uppringd');
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.error(textStatus, errorThrown);
+          $('button[type="submit"]').html('Bli uppringd');
+        }
+      });
+    }
+  }, false);
+})(jQuery);
 // Headroom INIT
 var headroom = new Headroom(document.querySelector("#header-desktop"), {
   offset: 0,

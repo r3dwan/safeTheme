@@ -62,7 +62,7 @@ function add_theme_scripts() {
 	wp_enqueue_script('theme_js');
 
 
-    wp_localize_script( 'theme_js', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));   
+    wp_localize_script( 'theme_js', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ));   
 
 }
 
